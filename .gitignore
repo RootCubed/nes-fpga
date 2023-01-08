@@ -1,8 +1,3 @@
-roms/*
-src/data/*.mem
-project/*
-!project/NES.xpr
-*.vvp
-*.fst
-*.gtkw
-Testbench.log
+.vscode
+obj_dir
+simvectors

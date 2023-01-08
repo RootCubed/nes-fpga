@@ -1,0 +1,95 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Thu Jan  5 22:58:03 2023
+[*]
+[dumpfile] "./obj_dir/trace.fst"
+[dumpfile_mtime] "Thu Jan  5 22:57:32 2023"
+[dumpfile_size] 469043
+[savefile] "./gtkwave_config.gtkw"
+[timestart] 35044902
+[size] 1840 951
+[pos] -1 -1
+*-10.258081 35047950 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.nes.
+[treeopen] TOP.nes.i_cpu6502.
+[treeopen] TOP.nes.i_ppu.
+[sst_width] 327
+[signals_width] 306
+[sst_expanded] 1
+[sst_vpaned_height] 482
+@28
+TOP.nes.i_ppu.clk
+TOP.nes.i_cpu6502.clk
+@22
+TOP.nes.i_cpu6502.reg_a_q[7:0]
+TOP.nes.i_cpu6502.reg_x_q[7:0]
+TOP.nes.i_cpu6502.reg_y_q[7:0]
+TOP.nes.i_cpu6502.status_q[7:0]
+TOP.nes.i_cpu6502.sp_q[7:0]
+TOP.nes.i_cpu6502.bus_address_o[15:0]
+TOP.nes.i_cpu6502.bus_data_i[7:0]
+TOP.nes.i_cpu6502.bus_data_o[7:0]
+@28
+TOP.nes.i_cpu6502.bus_rw_o
+@200
+-Internal CPU
+@100000028
+TOP.nes.i_cpu6502.state_q[31:0]
+TOP.nes.i_cpu6502.i_cpu6502_control.next_state[31:0]
+TOP.nes.i_cpu6502.i_cpu6502_control.addr_mode[31:0]
+TOP.nes.i_cpu6502.i_cpu6502_control.curr_instr[31:0]
+@22
+TOP.nes.i_cpu6502.pc_q[15:0]
+TOP.nes.i_cpu6502.curr_opcode_q[7:0]
+@28
+TOP.nes.i_cpu6502.nmi_i
+TOP.nes.i_cpu6502.oam_dma_active_q
+@22
+TOP.nes.i_cpu6502.oam_dma_count_q[7:0]
+@29
+TOP.nes.i_cpu6502.oam_dma_delay
+@200
+-ALU
+@22
+TOP.nes.i_cpu6502.i_alu.a_i[7:0]
+TOP.nes.i_cpu6502.i_alu.b_i[7:0]
+TOP.nes.i_cpu6502.i_cpu6502_control.tmp_store_i[15:0]
+@28
+TOP.nes.i_cpu6502.eah_invalid_q
+TOP.nes.i_cpu6502.i_cpu6502_control.eah_invalid
+TOP.nes.i_cpu6502.i_alu.carry_i
+@100000028
+TOP.nes.i_cpu6502.i_alu.op_i[2:0]
+@28
+TOP.nes.i_cpu6502.i_cpu6502_control.alu_carry_o
+TOP.nes.i_cpu6502.i_alu.carry_o
+@22
+TOP.nes.i_cpu6502.i_alu.res_o[7:0]
+@200
+-PPU
+@22
+TOP.nes.i_ppu.i_ppu_mmregs.addr_i[2:0]
+@24
+TOP.nes.i_ppu.x_q[8:0]
+TOP.nes.i_ppu.y_q[8:0]
+@28
+TOP.nes.i_ppu.i_ppu_mmregs.vram_override_addr_o
+TOP.nes.i_ppu.cpubus_rw_i
+TOP.nes.i_ppu.cpubus_ce_i
+@22
+TOP.nes.i_ppu.cpubus_data_i[7:0]
+TOP.nes.i_ppu.cpubus_data_o[7:0]
+@28
+TOP.nes.i_ppu.i_ppu_mmregs.vblank
+@22
+TOP.nes.i_ppu.vram_addr_q[14:0]
+TOP.nes.i_ppu.ppubus_address_o[13:0]
+TOP.nes.i_ppu.ppubus_data_o[7:0]
+@28
+TOP.nes.i_ppu.ppubus_rw_o
+TOP.nes.i_ppu.i_ppu_mmregs.vram_override_addr_o
+TOP.nes.i_ppu.bg_enable
+TOP.nes.i_ppu.spr_enable
+[pattern_trace] 1
+[pattern_trace] 0

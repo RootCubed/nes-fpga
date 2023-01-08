@@ -1,20 +1,12 @@
-SRC       := ./src
-SRCS	  := $(filter-out $(SRC)/NES.sv $(SRC)/ClockGen.sv, $(wildcard $(SRC)/*.sv))
-TESTBENCH := $(SRC)/tb/NESTestbench.sv
+.PHONY: compile
 
-all: simulate
-
-lint:
-	verilator --lint-only $(SRCS)
-
-FORCE: ;
-
-simulate: FORCE
-	iverilog -g2005-sv -Wall -o $(TESTBENCH).vvp $(SRCS) $(TESTBENCH)
-	cd src && vvp ./tb/NESTestbench.sv.vvp -n -fst > ../Testbench.log
-
-gtkwave: simulate
-	gtkwave $(SRC)/NESTestbench.fst testbench_wave.gtkw --optimize
+VERILOG_FILES = nes.sv
 
 clean:
-	rm -rf $(TESTBENCH).fst NESTestbench.vcd
+	rm -rf obj_dir
+
+compile: clean
+	verilator --cc --exe --build -j 0 --trace-fst $(VERILOG_FILES) wrapper.cpp screen_renderer.cpp -LDFLAGS "-lX11 -lGL -lGLU"
+
+run: compile
+	cd obj_dir && ./Vnes
